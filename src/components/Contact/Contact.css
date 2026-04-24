@@ -1,0 +1,111 @@
+.contact {
+  background-color: var(--bg-color);
+}
+
+.contact-container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.social-link {
+  color: var(--text-color);
+  font-size: 2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link:hover {
+  color: var(--accent-color);
+  transform: translateY(-5px);
+}
+
+.contact-form {
+  background-color: var(--card-bg);
+  padding: 3rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: rgba(15, 23, 42, 0.5);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-color);
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: inherit;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.status-msg {
+  margin-top: 1.5rem;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.status-msg.success {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.status-msg.error {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 2rem;
+  }
+}

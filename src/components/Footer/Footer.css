@@ -1,0 +1,17 @@
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: var(--card-bg);
+  border-top: 1px solid var(--border-color);
+  margin-top: 4rem;
+}
+
+.footer p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.footer .highlight {
+  color: var(--accent-color);
+  font-weight: 500;
+}
